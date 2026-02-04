@@ -7,16 +7,9 @@
 <title>Velren – Buy & Sell Used Items | Ballinasloe & Surrounding Areas</title>
 <meta name="description" content="Velren is a local marketplace for buying and selling used items in Ballinasloe and surrounding areas. We can list your item for you and take 20% commission of the final sale price when it sells." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
-<meta name="theme-color" content="#0B4FA2" />
 
 <link rel="canonical" href="https://velren.eu/" />
-
 <link rel="icon" href="assets/logo.png" />
-<link rel="apple-touch-icon" href="assets/logo.png" />
-
-<!-- Performance -->
-<link rel="preconnect" href="https://docs.google.com" />
-<link rel="preconnect" href="https://www.facebook.com" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
@@ -45,17 +38,8 @@
     "addressLocality": "Ballinasloe",
     "addressCountry": "IE"
   },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Ballinasloe and surrounding areas"
-  },
+  "areaServed": "Ballinasloe and surrounding areas",
   "email": "velreneu@gmail.com",
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "contactType": "customer support",
-    "email": "velreneu@gmail.com",
-    "availableLanguage": ["en"]
-  }],
   "sameAs": [
     "https://www.facebook.com/VelrenShop/"
   ]
@@ -133,58 +117,15 @@ header{
   letter-spacing:-0.02em;
 }
 
-nav{
-  display:flex;
-  align-items:center;
-  gap:18px;
-}
-
 nav a{
+  margin-left:18px;
   font-size:14px;
   color:var(--muted);
 }
 nav a:hover{color:var(--text)}
 
-/* Mobile menu (no JS) */
-.menu{
-  display:none;
-  position:relative;
-}
-.menu summary{
-  list-style:none;
-  cursor:pointer;
-  color:var(--muted);
-  font-size:14px;
-  border:1px solid var(--border);
-  background:var(--bg-soft);
-  padding:10px 12px;
-  border-radius:12px;
-  font-weight:700;
-}
-.menu summary::-webkit-details-marker{display:none}
-.menu .panel{
-  position:absolute;
-  right:0;
-  top:48px;
-  min-width:200px;
-  border:1px solid var(--border);
-  background:rgba(17,19,26,0.98);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-.menu .panel a{
-  display:block;
-  padding:12px 14px;
-  color:var(--muted);
-}
-.menu .panel a:hover{
-  background:rgba(255,255,255,0.06);
-  color:var(--text);
-}
-
 /* Hero */
-.hero{padding:90px 0 50px}
+.hero{padding:90px 0 70px}
 
 .hero h1{
   font-size:clamp(38px,5vw,58px);
@@ -241,31 +182,6 @@ nav a:hover{color:var(--text)}
   border-radius:10px;
   border:1px solid var(--border);
 }
-
-/* How it works strip */
-.how{
-  margin-top:34px;
-  border:1px solid var(--border);
-  background:rgba(17,19,26,0.65);
-  border-radius:var(--radius);
-  padding:18px;
-}
-.how-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:14px;
-}
-.step{
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:14px;
-  padding:14px;
-  background:rgba(0,0,0,0.15);
-}
-.step strong{
-  display:block;
-  margin-bottom:6px;
-}
-.step span{color:var(--muted); font-size:14px}
 
 /* Sections */
 section{
@@ -378,7 +294,6 @@ footer{
 
 @media (max-width:880px){
   nav a{display:none}
-  .menu{display:block}
 }
 </style>
 </head>
@@ -388,25 +303,14 @@ footer{
 <header>
   <div class="wrap nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="Velren logo" />
+      <img src="assets/logo.png" alt="Velren" />
       <strong>Velren</strong>
     </div>
-
-    <nav aria-label="Primary navigation">
+    <nav>
       <a href="#buy">Buy</a>
       <a href="#list">List Your Item</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-
-      <details class="menu">
-        <summary aria-label="Open menu">Menu</summary>
-        <div class="panel" role="menu" aria-label="Menu">
-          <a role="menuitem" href="#buy">Buy</a>
-          <a role="menuitem" href="#list">List Your Item</a>
-          <a role="menuitem" href="#faq">FAQ</a>
-          <a role="menuitem" href="#contact">Contact</a>
-        </div>
-      </details>
     </nav>
   </div>
 </header>
@@ -429,20 +333,17 @@ footer{
     </p>
 
     <div class="buttons">
-      <!-- Use a public / view link (recommended). Replace with your published/public URL if you publish it. -->
       <a class="btn primary"
-         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/pubhtml"
-         target="_blank" rel="noopener"
-         aria-label="Open live listings in a new tab">View Live Listings</a>
+         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
+         target="_blank" rel="noopener">View Live Listings</a>
 
       <a class="btn"
          href="mailto:velreneu@gmail.com?subject=Velren%20enquiry"
-         aria-label="Email Velren">Email Us</a>
+         rel="noopener">Email Us</a>
 
       <a class="btn"
          href="https://m.me/VelrenShop"
-         target="_blank" rel="noopener"
-         aria-label="Open Facebook Messenger in a new tab">Facebook Messenger</a>
+         target="_blank" rel="noopener">Facebook Messenger</a>
     </div>
 
     <div class="trustline">
@@ -453,25 +354,6 @@ footer{
     <div class="crest">
       <img src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
     </div>
-
-    <!-- How it works -->
-    <div class="how" aria-label="How Velren works">
-      <div class="how-grid">
-        <div class="step">
-          <strong>1) Send details</strong>
-          <span>Photos, description, condition, price, and location.</span>
-        </div>
-        <div class="step">
-          <strong>2) We list + handle messages</strong>
-          <span>We manage enquiries and help get the sale agreed.</span>
-        </div>
-        <div class="step">
-          <strong>3) Pay only when sold</strong>
-          <span>We take 20% of the final agreed sale price.</span>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -485,19 +367,17 @@ footer{
 
     <div class="buttons">
       <a class="btn primary"
-         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/pubhtml"
-         target="_blank" rel="noopener"
-         aria-label="Open live listings in a new tab">View Live Listings</a>
+         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
+         target="_blank" rel="noopener">View Live Listings</a>
 
       <a class="btn"
          href="https://m.me/VelrenShop"
-         target="_blank" rel="noopener"
-         aria-label="Message Velren on Facebook Messenger">Message About an Item</a>
+         target="_blank" rel="noopener">Message About an Item</a>
     </div>
 
     <div class="grid">
       <div class="card">
-        <img src="assets/smarthome.jpg" alt="Home and household items" />
+        <img src="assets/smarthome.jpg" alt="Home & household items" />
         <div class="pad">
           <strong>Home & Household</strong>
           <div class="small">Furniture, storage, kitchen bits, lamps, small appliances, and more.</div>
@@ -505,7 +385,7 @@ footer{
       </div>
 
       <div class="card">
-        <img src="assets/networking.jpg" alt="Tools, DIY and garden items" />
+        <img src="assets/networking.jpg" alt="Tools, DIY and garden" />
         <div class="pad">
           <strong>Tools, DIY & Garden</strong>
           <div class="small">Tools, ladders, garden items, workshop gear, practical stuff.</div>
@@ -513,7 +393,7 @@ footer{
       </div>
 
       <div class="card">
-        <img src="assets/audio.jpg" alt="Bikes, sports and miscellaneous items" />
+        <img src="assets/audio.jpg" alt="Bikes, sports and misc" />
         <div class="pad">
           <strong>Bikes, Sports & Misc</strong>
           <div class="small">Bikes, fitness, hobby items, tech, collectibles, and anything useful.</div>
@@ -549,13 +429,11 @@ footer{
 
     <div class="buttons">
       <a class="btn primary"
-         href="mailto:velreneu@gmail.com?subject=List%20my%20item%20on%20Velren"
-         aria-label="Email Velren to list an item">Email to List</a>
+         href="mailto:velreneu@gmail.com?subject=List%20my%20item%20on%20Velren">Email to List</a>
 
       <a class="btn"
          href="https://m.me/VelrenShop"
-         target="_blank" rel="noopener"
-         aria-label="Message Velren to list an item">Message to List</a>
+         target="_blank" rel="noopener">Message to List</a>
     </div>
   </div>
 </section>
@@ -603,5 +481,33 @@ footer{
     <p><strong>Ballinasloe & surrounding areas only</strong></p>
 
     <div class="buttons">
-      <a class="btn primary"
-         href="mailto:velreneu@gmail.com?subject=Velren%20en
+      <a class="btn primary" href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email velreneu@gmail.com</a>
+      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">Facebook Messenger</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-flex">
+      <img class="footer-crest" src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
+      <div>
+        © <span id="year"></span> Velren — Ballinasloe & Surrounding Areas
+        <div class="footer-links">
+          <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook Page</a>
+          <a href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
