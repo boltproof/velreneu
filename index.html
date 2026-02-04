@@ -4,15 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Velren – Smart Tech. Honest Prices.</title>
-<meta name="description" content="Velren supplies quality consumer electronics from verified EU sources. Smart home, networking and audio products shipped from Ireland. ">
+<title>Velren – Smart Tech. Honest Prices. | Ballinasloe, Ireland</title>
+<meta name="description" content="Velren sells quality consumer electronics sourced from trusted EU suppliers. Ireland-focused, sold directly from Ballinasloe. Smart home, networking and audio tech.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 
+<link rel="canonical" href="https://velren.eu/">
 <link rel="icon" href="assets/logo.png">
 
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Velren">
+<meta property="og:title" content="Velren – Smart Tech. Honest Prices.">
+<meta property="og:description" content="Quality consumer electronics sourced from trusted EU suppliers. Sold directly from Ballinasloe, Ireland.">
+<meta property="og:url" content="https://velren.eu/">
+<meta property="og:image" content="https://velren.eu/assets/logo.png">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Velren – Smart Tech. Honest Prices.">
+<meta name="twitter:description" content="Quality consumer electronics sold directly from Ballinasloe, Ireland.">
+<meta name="twitter:image" content="https://velren.eu/assets/logo.png">
+
+<!-- LocalBusiness structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Velren",
+  "url": "https://velren.eu/",
+  "image": "https://velren.eu/assets/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ballinasloe",
+    "addressCountry": "IE"
+  },
+  "email": "velreneu@gmail.com",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "velreneu@gmail.com",
+      "url": "https://m.me/VelrenShop"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/VelrenShop/"
+  ]
+}
+</script>
+
 <style>
-/* =======================
-   THEME VARIABLES
-======================= */
 :root {
   --bg: #0b0c10;
   --bg-soft: #11131a;
@@ -54,9 +95,7 @@ a { color: inherit; text-decoration: none; }
   padding: 0 20px;
 }
 
-/* =======================
-   HEADER / NAV
-======================= */
+/* Header */
 header {
   position: sticky;
   top: 0;
@@ -94,28 +133,20 @@ header {
   letter-spacing: -0.02em;
 }
 
-nav a {
+nav a, nav button {
   margin-left: 18px;
   font-size: 14px;
   color: var(--muted);
-}
-
-nav a:hover { color: var(--text); }
-
-/* Theme toggle */
-.toggle {
-  margin-left: 18px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--bg-soft);
-  font-size: 13px;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-/* =======================
-   HERO
-======================= */
+nav a:hover, nav button:hover {
+  color: var(--text);
+}
+
+/* Hero */
 .hero {
   padding: 90px 0 70px;
 }
@@ -128,8 +159,14 @@ nav a:hover { color: var(--text); }
 }
 
 .hero p {
-  max-width: 680px;
+  max-width: 720px;
   font-size: 18px;
+  color: var(--muted);
+}
+
+.trustline {
+  margin-top: 10px;
+  font-size: 14px;
   color: var(--muted);
 }
 
@@ -155,9 +192,7 @@ nav a:hover { color: var(--text); }
   color: #fff;
 }
 
-/* =======================
-   SECTIONS
-======================= */
+/* Sections */
 section {
   padding: 80px 0;
   border-top: 1px solid var(--border);
@@ -168,6 +203,8 @@ h2 {
   margin-bottom: 14px;
   letter-spacing: -0.02em;
 }
+
+p { max-width: 920px; }
 
 .grid {
   margin-top: 30px;
@@ -194,9 +231,26 @@ h2 {
   padding: 16px;
 }
 
-/* =======================
-   FOOTER
-======================= */
+.list {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.list strong { color: var(--text); }
+
+.note {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+}
+
+/* Footer */
 footer {
   border-top: 1px solid var(--border);
   padding: 30px 0;
@@ -210,6 +264,15 @@ footer {
   gap: 18px;
   flex-wrap: wrap;
 }
+
+.small {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 880px) {
+  nav a { display: none; }
+}
 </style>
 </head>
 
@@ -221,54 +284,92 @@ footer {
       <img src="assets/logo.png" alt="Velren">
       <strong>Velren</strong>
     </div>
-
     <nav>
       <a href="#about">About</a>
+      <a href="#how">How It Works</a>
       <a href="#products">Products</a>
+      <a href="#buy">How to Buy</a>
       <a href="#contact">Contact</a>
-      <button class="toggle" id="themeToggle">Light</button>
+      <button id="themeToggle">Light</button>
     </nav>
   </div>
 </header>
 
 <main>
 
-<section class="hero">
+<section class="hero" id="top">
   <div class="wrap">
-    <h1>Smart Tech.<br>Honest Prices.</h1>
+    <h1>Smart Tech.<br>Honest Prices.<br>Sold Directly from Ireland.</h1>
+
     <p>
-      Quality consumer electronics from verified EU sources — smart home,
-      networking and audio products shipped from Ireland.
+      Quality consumer electronics sourced from trusted EU suppliers and sold
+      directly from Ballinasloe, Ireland. No inflated retail pricing. No grey-market
+      guesswork. Just solid tech, sold honestly.
     </p>
 
     <div class="buttons">
-      <a class="btn primary" href="https://docs.google.com" target="_blank">View Live Stock</a>
-      <a class="btn" href="https://wa.me/353892339862" target="_blank">WhatsApp</a>
+      <a class="btn primary"
+         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
+         target="_blank" rel="noopener">
+        View Live Stock
+      </a>
+      <a class="btn"
+         href="mailto:velreneu@gmail.com?subject=Velren%20stock%20enquiry">
+        Email Us
+      </a>
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">
+        Facebook Messenger
+      </a>
+    </div>
+
+    <div class="trustline">
+      Ireland-based • Limited stock • Fast dispatch
+    </div>
+
+    <div class="note">
+      <strong>Typical response time:</strong> within 1–3 hours (Mon–Sat).
     </div>
   </div>
 </section>
 
-<section id="about">
+<section id="how">
   <div class="wrap">
-    <h2>About Velren</h2>
+    <h2>How Velren Works</h2>
     <p>
-      Velren specialises in new and surplus consumer electronics sourced from
-      trusted European distributors. Every item is verified, checked, and priced
-      honestly — without inflated retail margins.
+      Velren sources new and surplus consumer electronics from verified European
+      distributors. All stock is carefully selected, checked, and sold directly —
+      without unnecessary middlemen.
+    </p>
+
+    <div class="list">
+      <div>• <strong>Sourced in the EU</strong> from reputable suppliers</div>
+      <div>• <strong>Checked and verified</strong> before sale</div>
+      <div>• <strong>Stored and dispatched</strong> from Ballinasloe, Ireland</div>
+      <div>• <strong>Sold directly</strong> via email or Messenger</div>
+    </div>
+
+    <p class="small" style="margin-top:14px;">
+      Stock levels change regularly, and quantities are often limited.
     </p>
   </div>
 </section>
 
 <section id="products">
   <div class="wrap">
-    <h2>Product Categories</h2>
+    <h2>What We Sell</h2>
+    <p>
+      We focus on fast-moving, in-demand technology categories. If you’re looking
+      for something specific, it’s always worth asking.
+    </p>
 
     <div class="grid">
       <div class="card">
-        <img src="assets/smarthome.jpg" alt="Smart Home">
+        <img src="assets/smarthome.jpg" alt="Smart home">
         <div>
           <strong>Smart Home</strong>
-          <p>Automation, cameras, lighting and connected devices.</p>
+          <p class="small">Automation, cameras, lighting, and connected home tech.</p>
         </div>
       </div>
 
@@ -276,30 +377,89 @@ footer {
         <img src="assets/networking.jpg" alt="Networking">
         <div>
           <strong>Networking</strong>
-          <p>Routers, mesh systems and connectivity gear.</p>
+          <p class="small">Routers, mesh systems, Wi-Fi equipment, and accessories.</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="assets/audio.jpg" alt="Audio">
+        <img src="assets/audio.jpg" alt="Audio and media">
         <div>
-          <strong>Audio & Media</strong>
-          <p>Speakers, headphones and home entertainment tech.</p>
+          <strong>Audio &amp; Media</strong>
+          <p class="small">Speakers, headphones, and home entertainment devices.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section id="about">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p>Get in touch for availability, bulk orders or general enquiries.</p>
+    <h2>Why Buy from Velren</h2>
+    <p>There are plenty of places to buy tech online. Velren exists to remove the uncertainty.</p>
+
+    <div class="list">
+      <div>• <strong>Ireland-based business</strong> — real location, real contact</div>
+      <div>• <strong>Direct sales</strong> — no faceless marketplace experience</div>
+      <div>• <strong>Honest pricing</strong> — no inflated “recommended” prices</div>
+      <div>• <strong>Limited, curated stock</strong> — not bulk junk listings</div>
+      <div>• <strong>Easy contact</strong> — handled properly if anything isn’t right</div>
+    </div>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="wrap">
+    <h2>How to Buy</h2>
+    <p>
+      Most customers contact us directly to check availability and pricing. You can
+      email us or message on Facebook Messenger. We also maintain a Live Stock List,
+      updated regularly.
+    </p>
 
     <div class="buttons">
-      <a class="btn primary" href="mailto:info@velren.eu">info@velren.eu</a>
-      <a class="btn" href="https://wa.me/353892339862" target="_blank">WhatsApp</a>
+      <a class="btn primary"
+         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
+         target="_blank" rel="noopener">
+        View Live Stock
+      </a>
+      <a class="btn"
+         href="mailto:velreneu@gmail.com?subject=Velren%20stock%20enquiry">
+        Email velreneu@gmail.com
+      </a>
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">
+        Message on Messenger
+      </a>
     </div>
+
+    <div class="note">
+      <strong>Tip:</strong> If you message, tell us the item name (or send a screenshot)
+      and we’ll confirm price + availability.
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact Velren</h2>
+    <p><strong>Based in Ballinasloe, Ireland</strong></p>
+
+    <div class="buttons">
+      <a class="btn primary"
+         href="mailto:velreneu@gmail.com?subject=Velren%20stock%20enquiry">
+        Email Us
+      </a>
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">
+        Facebook Messenger
+      </a>
+    </div>
+
+    <p class="small" style="margin-top:14px;">
+      Please include the item name or a screenshot from the stock list to speed things up.
+    </p>
   </div>
 </section>
 
@@ -307,32 +467,31 @@ footer {
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Velren. All rights reserved.
+    © <span id="year"></span> Velren — Ballinasloe, Ireland
     <div class="footer-links">
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://wa.me/353892339862" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook Page</a>
+      <a href="mailto:velreneu@gmail.com?subject=Velren%20stock%20enquiry">Email</a>
+      <a href="#top">Back to top</a>
     </div>
   </div>
 </footer>
 
 <script>
-/* Year */
 document.getElementById("year").textContent = new Date().getFullYear();
 
 /* Theme toggle */
 const root = document.documentElement;
-const btn = document.getElementById("themeToggle");
-const stored = localStorage.getItem("theme");
+const toggle = document.getElementById("themeToggle");
+const saved = localStorage.getItem("theme");
 
-if (stored) root.setAttribute("data-theme", stored);
-btn.textContent = root.getAttribute("data-theme") === "light" ? "Dark" : "Light";
+if (saved) root.setAttribute("data-theme", saved);
+toggle.textContent = root.getAttribute("data-theme") === "light" ? "Dark" : "Light";
 
-btn.onclick = () => {
+toggle.onclick = () => {
   const isLight = root.getAttribute("data-theme") === "light";
   root.setAttribute("data-theme", isLight ? "dark" : "light");
   localStorage.setItem("theme", isLight ? "dark" : "light");
-  btn.textContent = isLight ? "Light" : "Dark";
+  toggle.textContent = isLight ? "Light" : "Dark";
 };
 </script>
 
