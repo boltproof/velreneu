@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Velren – Used Stuff, Sold Simply | Ballinasloe, Ireland</title>
-<meta name="description" content="Velren helps you buy and sell used items in Ireland. We also list your items for you and take a simple 20% commission of the final sale price when it sells. Based in Ballinasloe, Ireland.">
-<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Velren – Buy & Sell Used Items | Ballinasloe & Surrounding Areas</title>
+<meta name="description" content="Velren is a local marketplace for buying and selling used items in Ballinasloe and surrounding areas. We can list your item for you and take 20% commission of the final sale price when it sells." />
+<meta name="robots" content="index,follow,max-image-preview:large" />
 
-<link rel="canonical" href="https://velren.eu/">
-<link rel="icon" href="assets/logo.png">
+<link rel="canonical" href="https://velren.eu/" />
+<link rel="icon" href="assets/logo.png" />
 
 <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Velren">
-<meta property="og:title" content="Velren – Used Stuff, Sold Simply">
-<meta property="og:description" content="Buy and sell used items in Ireland. We can also list your items for you — 10% commission of the final sale price when it sells.">
-<meta property="og:url" content="https://velren.eu/">
-<meta property="og:image" content="https://velren.eu/assets/logo.png">
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Velren" />
+<meta property="og:title" content="Velren – Buy & Sell Used Items Locally" />
+<meta property="og:description" content="A simple local marketplace for Ballinasloe and nearby areas. Buy used items or let Velren sell yours for a 20% commission when it sells." />
+<meta property="og:url" content="https://velren.eu/" />
+<meta property="og:image" content="https://velren.eu/assets/logo.png" />
 
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Velren – Used Stuff, Sold Simply">
-<meta name="twitter:description" content="Buy and sell used items in Ireland. We can list your items for you — 10% commission of the final sale price when it sells.">
-<meta name="twitter:image" content="https://velren.eu/assets/logo.png">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Velren – Buy & Sell Used Items Locally" />
+<meta name="twitter:description" content="Local buying and selling in Ballinasloe & surrounding areas. 20% commission only when your item sells." />
+<meta name="twitter:image" content="https://velren.eu/assets/logo.png" />
 
-<!-- Structured data -->
+<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Store",
+  "@type": "LocalBusiness",
   "name": "Velren",
   "url": "https://velren.eu/",
   "image": "https://velren.eu/assets/logo.png",
@@ -38,15 +38,8 @@
     "addressLocality": "Ballinasloe",
     "addressCountry": "IE"
   },
+  "areaServed": "Ballinasloe and surrounding areas",
   "email": "velreneu@gmail.com",
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "velreneu@gmail.com",
-      "url": "https://m.me/VelrenShop"
-    }
-  ],
   "sameAs": [
     "https://www.facebook.com/VelrenShop/"
   ]
@@ -54,215 +47,253 @@
 </script>
 
 <style>
-:root {
-  --bg: #0b0c10;
-  --bg-soft: #11131a;
-  --text: #f5f7fa;
-  --muted: #a0a6b3;
-  --accent: #215eab;
-  --border: rgba(255,255,255,0.12);
-  --radius: 16px;
-  --shadow: 0 12px 40px rgba(0,0,0,0.35);
-  color-scheme: dark;
+:root{
+  --bg:#0b0c10;
+  --bg-soft:#11131a;
+  --text:#f5f7fa;
+  --muted:#a0a6b3;
+
+  /* Ballinasloe crest blue */
+  --accent:#0B4FA2;
+  --accent-dark:#083B7A;
+  --accent-soft:rgba(11,79,162,0.18);
+
+  --border:rgba(255,255,255,0.12);
+  --radius:16px;
+  --shadow:0 12px 40px rgba(0,0,0,0.35);
+  color-scheme:dark;
 }
 
-[data-theme="light"] {
-  --bg: #ffffff;
-  --bg-soft: #f5f6fa;
-  --text: #0b0c10;
-  --muted: #5c6472;
-  --accent: #215eab;
-  --border: rgba(0,0,0,0.12);
-  --shadow: 0 12px 32px rgba(0,0,0,0.15);
-  color-scheme: light;
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  background:linear-gradient(180deg,var(--bg),var(--bg-soft));
+  color:var(--text);
+  line-height:1.6;
 }
 
-* { box-sizing: border-box; }
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--bg), var(--bg-soft));
-  color: var(--text);
-  line-height: 1.6;
-}
-
-a { color: inherit; text-decoration: none; }
-
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
 }
 
 /* Header */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(0,0,0,0.65);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(0,0,0,0.65);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--accent-soft);
 }
 
-[data-theme="light"] header {
-  background: rgba(255,255,255,0.85);
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.brand img{
+  width:42px;
+  height:42px;
+  border-radius:10px;
 }
 
-.brand img {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
+.brand strong{
+  font-size:18px;
+  letter-spacing:-0.02em;
 }
 
-.brand strong {
-  font-size: 18px;
-  letter-spacing: -0.02em;
+nav a{
+  margin-left:18px;
+  font-size:14px;
+  color:var(--muted);
 }
-
-nav a, nav button {
-  margin-left: 18px;
-  font-size: 14px;
-  color: var(--muted);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-nav a:hover, nav button:hover { color: var(--text); }
+nav a:hover{color:var(--text)}
 
 /* Hero */
-.hero { padding: 90px 0 70px; }
+.hero{padding:90px 0 70px}
 
-.hero h1 {
-  font-size: clamp(38px, 5vw, 58px);
-  line-height: 1.05;
-  margin: 0 0 18px;
-  letter-spacing: -0.03em;
+.hero h1{
+  font-size:clamp(38px,5vw,58px);
+  line-height:1.05;
+  margin:0 0 18px;
+  letter-spacing:-0.03em;
 }
 
-.hero p {
-  max-width: 780px;
-  font-size: 18px;
-  color: var(--muted);
+.hero p{
+  max-width:820px;
+  font-size:18px;
+  color:var(--muted);
+  margin:0 0 14px;
 }
 
-.trustline {
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--muted);
+.hero p strong{color:var(--text)}
+
+.trustline{
+  margin-top:12px;
+  font-size:14px;
+  color:var(--muted);
 }
 
-.buttons {
-  margin-top: 28px;
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+.buttons{
+  margin-top:26px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
 }
 
-.btn {
-  padding: 14px 22px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: var(--bg-soft);
-  font-weight: 600;
-  font-size: 14px;
+.btn{
+  padding:14px 22px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:var(--bg-soft);
+  font-weight:700;
+  font-size:14px;
 }
 
-.btn.primary {
-  background: linear-gradient(180deg, #215eab, #173f7a);
-  border-color: #215eab;
-  color: #fff;
+.btn.primary{
+  background:linear-gradient(180deg,var(--accent),var(--accent-dark));
+  border-color:var(--accent);
+  color:#fff;
+}
+
+/* Crest (Hero + Footer) */
+.crest{
+  margin-top:18px;
+}
+.crest img{
+  width:88px;
+  max-width:100%;
+  opacity:0.92;
+  border-radius:10px;
+  border:1px solid var(--border);
 }
 
 /* Sections */
-section {
-  padding: 80px 0;
-  border-top: 1px solid var(--border);
+section{
+  padding:80px 0;
+  border-top:1px solid var(--border);
 }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 14px;
-  letter-spacing: -0.02em;
+h2{
+  font-size:30px;
+  margin:0 0 14px;
+  letter-spacing:-0.02em;
 }
 
-p { max-width: 920px; }
+p{max-width:920px}
 
-.grid {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
+.list{
+  margin-top:16px;
+  display:grid;
+  gap:8px;
+  color:var(--muted);
+}
+.list strong{color:var(--text)}
+
+.note{
+  margin-top:14px;
+  font-size:14px;
+  color:var(--muted);
+  border:1px solid var(--border);
+  background:var(--bg-soft);
+  border-radius:var(--radius);
+  padding:12px 14px;
 }
 
-.card {
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
+/* Cards */
+.grid{
+  margin-top:26px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.card{
+  background:var(--bg-soft);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
 }
 
-.card div { padding: 16px; }
-
-.list {
-  margin-top: 16px;
-  display: grid;
-  gap: 8px;
-  color: var(--muted);
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
 }
 
-.list strong { color: var(--text); }
+.card .pad{padding:16px}
+.small{font-size:13px;color:var(--muted)}
 
-.note {
-  margin-top: 14px;
-  font-size: 14px;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  background: var(--bg-soft);
-  border-radius: var(--radius);
-  padding: 12px 14px;
+/* FAQ */
+.faq{
+  margin-top:18px;
+  display:grid;
+  gap:12px;
+}
+.faq details{
+  border:1px solid var(--border);
+  background:var(--bg-soft);
+  border-radius:var(--radius);
+  padding:12px 14px;
+}
+.faq summary{
+  cursor:pointer;
+  font-weight:700;
+}
+.faq p{
+  margin:10px 0 0;
+  color:var(--muted);
 }
 
 /* Footer */
-footer {
-  border-top: 1px solid var(--border);
-  padding: 30px 0;
-  font-size: 14px;
-  color: var(--muted);
+footer{
+  border-top:1px solid var(--border);
+  padding:30px 0;
+  font-size:14px;
+  color:var(--muted);
 }
 
-.footer-links {
-  margin-top: 10px;
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
+.footer-flex{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
 }
 
-.small { font-size: 13px; color: var(--muted); }
+.footer-links{
+  margin-top:10px;
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
 
-@media (max-width: 880px) {
-  nav a { display: none; }
+.footer-crest{
+  width:54px;
+  height:auto;
+  border-radius:10px;
+  border:1px solid var(--border);
+  opacity:0.92;
+}
+
+@media (max-width:880px){
+  nav a{display:none}
 }
 </style>
 </head>
@@ -272,15 +303,14 @@ footer {
 <header>
   <div class="wrap nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="Velren">
+      <img src="assets/logo.png" alt="Velren" />
       <strong>Velren</strong>
     </div>
     <nav>
-      <a href="#about">About</a>
       <a href="#buy">Buy</a>
       <a href="#list">List Your Item</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <button id="themeToggle">Light</button>
     </nav>
   </div>
 </header>
@@ -289,109 +319,162 @@ footer {
 
 <section class="hero" id="top">
   <div class="wrap">
-    <h1>Used Stuff.<br>Sold Simply.<br>From Ballinasloe.</h1>
+    <h1>Buy & Sell Used Items.<br>Locally.<br>Simply.</h1>
 
     <p>
-      Velren sells a mix of general used items — practical, decent-value stuff that people actually want.
-      You can also get Velren to list your item for you and handle the sale.
-      We keep it simple: <strong>10% commission of the final sale price when it sells</strong>.
+      Velren is a local marketplace for <strong>Ballinasloe and surrounding areas</strong>.
+      Items can be <strong>anything</strong> (as long as they’re legal and sellable): home, garden, tools, bikes,
+      electronics, household bits — whatever people genuinely want.
+    </p>
+
+    <p>
+      Want to sell something without the hassle? We’ll list it, handle enquiries, and help close the sale.
+      When it sells, we take <strong>20% commission of the final sale price</strong>.
     </p>
 
     <div class="buttons">
       <a class="btn primary"
          href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
-         target="_blank" rel="noopener">
-        View Live Stock
-      </a>
-      <a class="btn" href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">
-        Email Us
-      </a>
-      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">
-        Facebook Messenger
-      </a>
+         target="_blank" rel="noopener">View Live Listings</a>
+
+      <a class="btn"
+         href="mailto:velreneu@gmail.com?subject=Velren%20enquiry"
+         rel="noopener">Email Us</a>
+
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">Facebook Messenger</a>
     </div>
 
     <div class="trustline">
-      Ireland-based • Local listings • 10% of final sale price (only when sold)
+      Ballinasloe • Surrounding areas • Local listings • 20% commission (only when sold)
     </div>
-  </div>
-</section>
 
-<section id="about">
-  <div class="wrap">
-    <h2>About Velren</h2>
-    <p>
-      Velren is a simple way to buy and sell used items in Ireland.
-      Some stock is ours, and some stock belongs to other people who want us to handle the listing and sale.
-    </p>
-
-    <div class="list">
-      <div>• <strong>General used items</strong> — not limited to electronics</div>
-      <div>• <strong>Local and straightforward</strong> — based in Ballinasloe, Ireland</div>
-      <div>• <strong>Sell for others</strong> — we list your item and take <strong>10% of the final sale price</strong> when it sells</div>
-      <div>• <strong>Easy contact</strong> — email or Messenger only</div>
+    <!-- Crest under trustline -->
+    <div class="crest">
+      <img src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
     </div>
   </div>
 </section>
 
 <section id="buy">
   <div class="wrap">
-    <h2>Buying from Velren</h2>
+    <h2>Buying Locally</h2>
     <p>
-      The easiest way to see what’s available is the Live Stock List. If you want something,
-      message or email with the item name (or a screenshot) and we’ll confirm availability and next steps.
+      See what’s available in the Live Listings sheet. If you want something, message or email the item name
+      (or send a screenshot) and we’ll take it from there.
     </p>
 
     <div class="buttons">
       <a class="btn primary"
          href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
-         target="_blank" rel="noopener">
-        View Live Stock
-      </a>
-      <a class="btn" href="mailto:velreneu@gmail.com?subject=Velren%20purchase%20enquiry">
-        Email to Buy
-      </a>
-      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">
-        Message to Buy
-      </a>
+         target="_blank" rel="noopener">View Live Listings</a>
+
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">Message About an Item</a>
     </div>
 
     <div class="note">
-      <strong>Tip:</strong> Include the item name and your location in Ireland, and we’ll move quicker.
+      <strong>Tip:</strong> Include your location (town/county). This stays local, so that detail matters.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="assets/smarthome.jpg" alt="Home & household items" />
+        <div class="pad">
+          <strong>Home & Household</strong>
+          <div class="small">Furniture, storage, kitchen bits, lamps, small appliances, and more.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/networking.jpg" alt="Tools, DIY and garden" />
+        <div class="pad">
+          <strong>Tools, DIY & Garden</strong>
+          <div class="small">Tools, ladders, garden items, workshop gear, practical stuff.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/audio.jpg" alt="Bikes, sports and misc" />
+        <div class="pad">
+          <strong>Bikes, Sports & Misc</strong>
+          <div class="small">Bikes, fitness, hobby items, tech, collectibles, and anything useful.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="list">
   <div class="wrap">
-    <h2>List Your Item on Velren</h2>
+    <h2>List Your Item</h2>
     <p>
-      Want to sell something without the hassle? Send us the details and we’ll list it.
-      When it sells, we take a simple <strong>10% commission of the final sale price</strong>.
+      If you don’t want the back-and-forth, no-shows, and time-wasters, send us the details and we’ll list it.
+      When it sells, we take <strong>20% of the final sale price</strong>.
     </p>
 
     <div class="list">
-      <div>• <strong>Commission:</strong> 10% of the final sale price (only when the item sells)</div>
-      <div>• <strong>What you send:</strong> photos + condition + price you want + your location</div>
-      <div>• <strong>We do:</strong> listing, enquiries, and helping close the sale</div>
+      <div>• <strong>Commission:</strong> 20% of the final sale price</div>
+      <div>• <strong>Fee timing:</strong> only when the item sells</div>
+      <div>• <strong>Local only:</strong> Ballinasloe & surrounding areas</div>
+      <div>• <strong>Contact:</strong> email or Messenger (no accounts needed)</div>
     </div>
 
     <div class="note">
-      <strong>What to send us:</strong><br>
-      1) 4–8 clear photos (front, back, any marks)<br>
+      <strong>Please send:</strong><br>
+      1) 4–8 clear photos (front/back + any marks)<br>
       2) Item name + short description<br>
-      3) Condition (new/used, any issues)<br>
+      3) Condition (any issues, missing parts, etc.)<br>
       4) Your asking price (or “open to offers”)<br>
-      5) Your town/county for collection or delivery
+      5) Your town/county (for collection/local delivery)
     </div>
 
     <div class="buttons">
-      <a class="btn primary" href="mailto:velreneu@gmail.com?subject=List%20my%20item%20on%20Velren">
-        Email to List an Item
-      </a>
-      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">
-        Message to List an Item
-      </a>
+      <a class="btn primary"
+         href="mailto:velreneu@gmail.com?subject=List%20my%20item%20on%20Velren">Email to List</a>
+
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">Message to List</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+
+    <div class="faq">
+      <details>
+        <summary>What does the 20% commission cover?</summary>
+        <p>
+          It covers the listing, handling enquiries, and helping close the sale. The commission is calculated on the
+          <strong>final agreed sale price</strong> and is only due once it sells.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you take items from outside Ballinasloe?</summary>
+        <p>
+          This is a local service. We focus on Ballinasloe and nearby areas so collection/local delivery stays practical.
+        </p>
+      </details>
+
+      <details>
+        <summary>What items can be listed?</summary>
+        <p>
+          Anything legal and sellable. If you’re unsure, message us with photos and we’ll tell you quickly.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do buyers contact you?</summary>
+        <p>
+          Only via email or Facebook Messenger. No phone number and no WhatsApp.
+        </p>
+      </details>
     </div>
   </div>
 </section>
@@ -399,15 +482,11 @@ footer {
 <section id="contact">
   <div class="wrap">
     <h2>Contact Velren</h2>
-    <p><strong>Based in Ballinasloe, Ireland</strong></p>
+    <p><strong>Ballinasloe & surrounding areas only</strong></p>
 
     <div class="buttons">
-      <a class="btn primary" href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">
-        Email velreneu@gmail.com
-      </a>
-      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">
-        Facebook Messenger
-      </a>
+      <a class="btn primary" href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email velreneu@gmail.com</a>
+      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">Facebook Messenger</a>
     </div>
   </div>
 </section>
@@ -416,31 +495,22 @@ footer {
 
 <footer>
   <div class="wrap">
-    © <span id="year"></span> Velren — Ballinasloe, Ireland
-    <div class="footer-links">
-      <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook Page</a>
-      <a href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
-      <a href="#top">Back to top</a>
+    <div class="footer-flex">
+      <img class="footer-crest" src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
+      <div>
+        © <span id="year"></span> Velren — Ballinasloe & Surrounding Areas
+        <div class="footer-links">
+          <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook Page</a>
+          <a href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
 
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
-
-const root = document.documentElement;
-const toggle = document.getElementById("themeToggle");
-const saved = localStorage.getItem("theme");
-
-if (saved) root.setAttribute("data-theme", saved);
-toggle.textContent = root.getAttribute("data-theme") === "light" ? "Dark" : "Light";
-
-toggle.onclick = () => {
-  const isLight = root.getAttribute("data-theme") === "light";
-  root.setAttribute("data-theme", isLight ? "dark" : "light");
-  localStorage.setItem("theme", isLight ? "dark" : "light");
-  toggle.textContent = isLight ? "Light" : "Dark";
-};
 </script>
 
 </body>
