@@ -41,7 +41,8 @@
   "areaServed": "Ballinasloe and surrounding areas",
   "email": "velreneu@gmail.com",
   "sameAs": [
-    "https://www.facebook.com/VelrenShop/"
+    "https://www.facebook.com/VelrenShop/",
+    "https://share.google/wdmHBXNprfUArM6eG"
   ]
 }
 </script>
@@ -52,12 +53,9 @@
   --bg-soft:#11131a;
   --text:#f5f7fa;
   --muted:#a0a6b3;
-
-  /* Ballinasloe crest blue */
   --accent:#0B4FA2;
   --accent-dark:#083B7A;
   --accent-soft:rgba(11,79,162,0.18);
-
   --border:rgba(255,255,255,0.12);
   --radius:16px;
   --shadow:0 12px 40px rgba(0,0,0,0.35);
@@ -171,14 +169,12 @@ nav a:hover{color:var(--text)}
   color:#fff;
 }
 
-/* Crest (Hero + Footer) */
+/* Crest */
 .crest{
   margin-top:18px;
 }
 .crest img{
   width:88px;
-  max-width:100%;
-  opacity:0.92;
   border-radius:10px;
   border:1px solid var(--border);
 }
@@ -196,70 +192,6 @@ h2{
 }
 
 p{max-width:920px}
-
-.list{
-  margin-top:16px;
-  display:grid;
-  gap:8px;
-  color:var(--muted);
-}
-.list strong{color:var(--text)}
-
-.note{
-  margin-top:14px;
-  font-size:14px;
-  color:var(--muted);
-  border:1px solid var(--border);
-  background:var(--bg-soft);
-  border-radius:var(--radius);
-  padding:12px 14px;
-}
-
-/* Cards */
-.grid{
-  margin-top:26px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:22px;
-}
-
-.card{
-  background:var(--bg-soft);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
-  overflow:hidden;
-}
-
-.card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-}
-
-.card .pad{padding:16px}
-.small{font-size:13px;color:var(--muted)}
-
-/* FAQ */
-.faq{
-  margin-top:18px;
-  display:grid;
-  gap:12px;
-}
-.faq details{
-  border:1px solid var(--border);
-  background:var(--bg-soft);
-  border-radius:var(--radius);
-  padding:12px 14px;
-}
-.faq summary{
-  cursor:pointer;
-  font-weight:700;
-}
-.faq p{
-  margin:10px 0 0;
-  color:var(--muted);
-}
 
 /* Footer */
 footer{
@@ -286,14 +218,8 @@ footer{
 
 .footer-crest{
   width:54px;
-  height:auto;
   border-radius:10px;
   border:1px solid var(--border);
-  opacity:0.92;
-}
-
-@media (max-width:880px){
-  nav a{display:none}
 }
 </style>
 </head>
@@ -303,7 +229,7 @@ footer{
 <header>
   <div class="wrap nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="Velren" />
+      <img src="assets/logo.png" alt="Velren logo" />
       <strong>Velren</strong>
     </div>
     <nav>
@@ -323,13 +249,13 @@ footer{
 
     <p>
       Velren is a local marketplace for <strong>Ballinasloe and surrounding areas</strong>.
-      Items can be <strong>anything</strong> (as long as they’re legal and sellable): home, garden, tools, bikes,
-      electronics, household bits — whatever people genuinely want.
+      Items can be <strong>anything</strong> (as long as they’re legal and sellable).
     </p>
 
     <p>
-      Want to sell something without the hassle? We’ll list it, handle enquiries, and help close the sale.
-      When it sells, we take <strong>20% commission of the final sale price</strong>.
+      Want to sell something without the hassle? We’ll list it, handle enquiries,
+      and help close the sale. When it sells, we take
+      <strong>20% commission of the final sale price</strong>.
     </p>
 
     <div class="buttons">
@@ -338,8 +264,7 @@ footer{
          target="_blank" rel="noopener">View Live Listings</a>
 
       <a class="btn"
-         href="mailto:velreneu@gmail.com?subject=Velren%20enquiry"
-         rel="noopener">Email Us</a>
+         href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email Us</a>
 
       <a class="btn"
          href="https://m.me/VelrenShop"
@@ -350,127 +275,8 @@ footer{
       Ballinasloe • Surrounding areas • Local listings • 20% commission (only when sold)
     </div>
 
-    <!-- Crest under trustline -->
     <div class="crest">
       <img src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
-    </div>
-  </div>
-</section>
-
-<section id="buy">
-  <div class="wrap">
-    <h2>Buying Locally</h2>
-    <p>
-      See what’s available in the Live Listings sheet. If you want something,
-      message or email about the item name and we’ll take it from there.
-    </p>
-
-    <div class="buttons">
-      <a class="btn primary"
-         href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
-         target="_blank" rel="noopener">View Live Listings</a>
-
-      <a class="btn"
-         href="https://m.me/VelrenShop"
-         target="_blank" rel="noopener">Message About an Item</a>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <img src="assets/smarthome.jpg" alt="Home & household items" />
-        <div class="pad">
-          <strong>Home & Household</strong>
-          <div class="small">Furniture, storage, kitchen bits, lamps, small appliances, and more.</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/networking.jpg" alt="Tools, DIY and garden" />
-        <div class="pad">
-          <strong>Tools, DIY & Garden</strong>
-          <div class="small">Tools, ladders, garden items, workshop gear, practical stuff.</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="assets/audio.jpg" alt="Bikes, sports and misc" />
-        <div class="pad">
-          <strong>Bikes, Sports & Misc</strong>
-          <div class="small">Bikes, fitness, hobby items, tech, collectibles, and anything useful.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="list">
-  <div class="wrap">
-    <h2>List Your Item</h2>
-    <p>
-      If you don’t want the back-and-forth, no-shows, and time-wasters, send us the details and we’ll list it.
-      When it sells, we take <strong>20% of the final sale price</strong>.
-    </p>
-
-    <div class="list">
-      <div>• <strong>Commission:</strong> 20% of the final sale price</div>
-      <div>• <strong>Fee timing:</strong> only when the item sells</div>
-      <div>• <strong>Local only:</strong> Ballinasloe & surrounding areas</div>
-      <div>• <strong>Contact:</strong> email or Messenger (no accounts needed)</div>
-    </div>
-
-    <div class="note">
-      <strong>Please send:</strong><br>
-      1) 4–8 clear photos (front/back + any marks)<br>
-      2) Item name + short description<br>
-      3) Condition (any issues, missing parts, etc.)<br>
-      4) Your asking price (or “open to offers”)<br>
-      5) Your location
-    </div>
-
-    <div class="buttons">
-      <a class="btn primary"
-         href="mailto:velreneu@gmail.com?subject=List%20my%20item%20on%20Velren">Email to List</a>
-
-      <a class="btn"
-         href="https://m.me/VelrenShop"
-         target="_blank" rel="noopener">Message to List</a>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <h2>FAQ</h2>
-
-    <div class="faq">
-      <details>
-        <summary>What does the 20% commission cover?</summary>
-        <p>
-          It covers the listing, handling enquiries, and helping close the sale. The commission is calculated on the
-          <strong>final agreed sale price</strong> and is only due once it sells.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do you take items from outside Ballinasloe?</summary>
-        <p>
-          This is a local service. We focus on Ballinasloe and nearby areas so collection/local delivery stays practical.
-        </p>
-      </details>
-
-      <details>
-        <summary>What items can be listed?</summary>
-        <p>
-          Anything legal and sellable. If you’re unsure, message us with photos and we’ll tell you quickly.
-        </p>
-      </details>
-
-      <details>
-        <summary>How do buyers contact you?</summary>
-        <p>
-          Only via email or Facebook Messenger. No phone number and no WhatsApp.
-        </p>
-      </details>
     </div>
   </div>
 </section>
@@ -481,8 +287,16 @@ footer{
     <p><strong>Ballinasloe & surrounding areas only</strong></p>
 
     <div class="buttons">
-      <a class="btn primary" href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email velreneu@gmail.com</a>
-      <a class="btn" href="https://m.me/VelrenShop" target="_blank" rel="noopener">Facebook Messenger</a>
+      <a class="btn primary"
+         href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
+
+      <a class="btn"
+         href="https://m.me/VelrenShop"
+         target="_blank" rel="noopener">Facebook Messenger</a>
+
+      <a class="btn"
+         href="https://share.google/wdmHBXNprfUArM6eG"
+         target="_blank" rel="noopener">Google Business</a>
     </div>
   </div>
 </section>
@@ -496,8 +310,9 @@ footer{
       <div>
         © <span id="year"></span> Velren — Ballinasloe & Surrounding Areas
         <div class="footer-links">
-          <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook Page</a>
-          <a href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
+          <a href="https://www.facebook.com/VelrenShop/" target="_blank">Facebook</a>
+          <a href="https://share.google/wdmHBXNprfUArM6eG" target="_blank">Google Business</a>
+          <a href="mailto:velreneu@gmail.com">Email</a>
           <a href="#top">Back to top</a>
         </div>
       </div>
