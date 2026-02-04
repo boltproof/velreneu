@@ -1,210 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Velren – Smart Tech. Honest Prices.</title>
-  <meta name="description" content="Ireland’s trusted source for quality consumer electronics. Verified EU stock, fast dispatch, and tracked delivery from Ireland." />
 
-  <!-- Favicons (optional): keep yours if you have them -->
-  <link rel="icon" href="wp-content/uploads/2025/11/cropped-Velren-Logo-3-32x32.webp" />
+  <meta name="description" content="Velren supplies quality consumer electronics from verified EU sources. Smart home, networking, and audio products shipped from Ireland." />
 
-  <meta property="og:title" content="Velren – Smart Tech. Honest Prices." />
-  <meta property="og:description" content="Verified EU consumer electronics stock. Fast dispatch across Ireland & EU." />
-  <meta property="og:image" content="wp-content/uploads/2025/11/Velren-Logo-2.png" />
+  <link rel="icon" href="assets/logo.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Clean, BoltProof-ish system font feel with a modern sans fallback -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --bg-soft: #11131a;
+      --text: #f5f7fa;
+      --muted: #a0a6b3;
+      --accent: #215eab;
+      --border: rgba(255,255,255,0.1);
+      --radius: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    }
 
-  <link rel="stylesheet" href="styles.css" />
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #0b0c10, #0f1320);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(11,12,16,0.75);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+    }
+
+    .brand strong {
+      font-size: 18px;
+      letter-spacing: -0.02em;
+    }
+
+    nav a {
+      margin-left: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 80px 0 60px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.1;
+      margin: 0 0 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      font-weight: 600;
+      font-size: 14px;
+      background: var(--bg-soft);
+    }
+
+    .btn.primary {
+      background: linear-gradient(180deg, #215eab, #173f7a);
+      border-color: #215eab;
+    }
+
+    section {
+      padding: 70px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .grid {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card div {
+      padding: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 
 <body>
-  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="top">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Velren home">
-        <img
-          class="brand__logo"
-          src="wp-content/uploads/2025/11/Velren-Logo-2.png"
-          alt="Velren logo"
-          loading="eager"
-        />
-        <div class="brand__text">
-          <div class="brand__name">Velren</div>
-          <div class="brand__tag">Smart Tech • Honest Prices</div>
-        </div>
-      </a>
-
-      <nav class="menu" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-        <a class="menu__cta" href="https://docs.google.com/" target="_blank" rel="noopener">Live Stock</a>
-      </nav>
-
-      <button id="themeToggle" class="toggle" type="button" aria-label="Toggle dark mode">
-        <span class="toggle__dot" aria-hidden="true"></span>
-        <span class="toggle__label">Dark</span>
-      </button>
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Velren logo">
+      <strong>Velren</strong>
     </div>
-  </header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="wrap">
-        <div class="kicker">Verified EU stock • Ships from Ireland • Tracked delivery</div>
-        <h1>Smart Tech. Honest Prices.</h1>
+<main>
 
-        <p class="lede">
-          Ireland’s trusted source for quality consumer electronics — from networking gear to smart home essentials,
-          sourced from verified EU suppliers.
-        </p>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Smart Tech.<br>Honest Prices.</h1>
+      <p>
+        Velren supplies quality consumer electronics from verified EU sources.
+        Smart home, networking, and audio products — shipped from Ireland with care.
+      </p>
 
-        <ul class="ticks" aria-label="Highlights">
-          <li>Verified EU distributors</li>
-          <li>Checked and tested items</li>
-          <li>Fast dispatch across Ireland & EU</li>
-        </ul>
-
-        <div class="actions">
-          <a class="btn btn--primary" href="https://docs.google.com/" target="_blank" rel="noopener">
-            View Live Stock List
-          </a>
-          <a class="btn btn--ghost" href="https://wa.me/353892339862" target="_blank" rel="noopener">
-            WhatsApp
-          </a>
-        </div>
-
-        <div class="storebar" aria-label="Stores">
-          <a href="https://www.ebay.ie/" target="_blank" rel="noopener">eBay</a>
-          <a href="https://www.donedeal.ie/" target="_blank" rel="noopener">DoneDeal</a>
-          <a href="https://www.adverts.ie/" target="_blank" rel="noopener">Adverts</a>
-          <a href="https://www.vinted.ie/" target="_blank" rel="noopener">Vinted</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap">
-        <h2>Who we are</h2>
-        <p>
-          Velren is a consumer electronics business based in Ireland, specialising in new, surplus, and liquidation stock
-          from trusted European distributors. Every item is hand-selected to ensure quality, authenticity, and great value —
-          giving customers access to premium tech without the retail markup.
-        </p>
-      </div>
-    </section>
-
-    <section class="section" id="products">
-      <div class="wrap">
-        <h2>Product categories</h2>
-
-        <div class="grid">
-          <article class="card">
-            <img src="wp-content/uploads/2025/11/free-photo-of-smart-home-devices-in-minimalist-setup-scaled.jpg" alt="Smart home devices" loading="lazy">
-            <div class="card__body">
-              <h3>Smart Home</h3>
-              <p>Cameras, lighting, plugs, and automation gadgets.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="wp-content/uploads/2025/11/BEST-MESH-NETWORKING-SYSTEMS-2048px-7296.jpg" alt="Networking equipment" loading="lazy">
-            <div class="card__body">
-              <h3>Networking</h3>
-              <p>Routers, mesh systems, extenders, and accessories.</p>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="wp-content/uploads/2025/11/advertising-product-photo-highimpact-modern-260nw-2664369875-1.jpg" alt="Audio and multimedia devices" loading="lazy">
-            <div class="card__body">
-              <h3>Audio &amp; Multimedia</h3>
-              <p>Speakers, headphones, and entertainment tech.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="why">
-      <div class="wrap">
-        <h2>Why choose Velren</h2>
-
-        <div class="bullets">
-          <div class="bullet"><strong>Trusted products</strong><span>Verified EU suppliers.</span></div>
-          <div class="bullet"><strong>Quality assurance</strong><span>Checked and tested items.</span></div>
-          <div class="bullet"><strong>Affordable pricing</strong><span>Great value guaranteed.</span></div>
-          <div class="bullet"><strong>Fast fulfilment</strong><span>Quick dispatch across Ireland &amp; EU.</span></div>
-          <div class="bullet"><strong>Customer care</strong><span>Reliable after-sales support.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="wrap">
-        <h2>Contact</h2>
-        <p>
-          Reach out via email or WhatsApp, or explore our online stores.
-        </p>
-
-        <div class="contact">
-          <a class="btn btn--primary" href="mailto:info@velren.eu">info@velren.eu</a>
-          <a class="btn btn--ghost" href="https://wa.me/353892339862" target="_blank" rel="noopener">WhatsApp: +353 89 233 9862</a>
-          <a class="btn btn--ghost" href="https://docs.google.com/" target="_blank" rel="noopener">Live Stock List</a>
-        </div>
-
-        <p class="note">
-          Based in Ballinasloe, Ireland. All items ship from Ireland with tracked delivery.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <div>
-        <div class="footer__brand">© <span id="year"></span> Velren. All rights reserved.</div>
-        <div class="footer__sub">Built as a lightweight static site (fast, secure, no WordPress dependencies).</div>
-      </div>
-
-      <div class="footer__links">
-        <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://wa.me/353892339862" target="_blank" rel="noopener">WhatsApp</a>
+      <div class="buttons">
+        <a class="btn primary" href="#" target="_blank">View Live Stock</a>
+        <a class="btn" href="https://wa.me/353892339862" target="_blank">WhatsApp</a>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    // Year
-    document.getElementById("year").textContent = new Date().getFullYear();
+  <section id="about">
+    <div class="wrap">
+      <h2>About Velren</h2>
+      <p>
+        We specialise in new and surplus consumer electronics sourced from trusted
+        European distributors. Every item is checked, verified, and priced honestly —
+        without retail markups.
+      </p>
+    </div>
+  </section>
 
-    // Dark mode toggle (BoltProof-style “Dark” switch)
-    const root = document.documentElement;
-    const btn = document.getElementById("themeToggle");
-    const label = btn.querySelector(".toggle__label");
+  <section id="products">
+    <div class="wrap">
+      <h2>Product Categories</h2>
 
-    const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      <div class="grid">
+        <div class="card">
+          <img src="assets/smarthome.jpg" alt="Smart home">
+          <div>
+            <strong>Smart Home</strong>
+            <p>Automation, cameras, lighting, and connected devices.</p>
+          </div>
+        </div>
 
-    function applyTheme(mode) {
-      root.dataset.theme = mode;
-      label.textContent = mode === "dark" ? "Light" : "Dark";
-      localStorage.setItem("theme", mode);
-    }
+        <div class="card">
+          <img src="assets/networking.jpg" alt="Networking">
+          <div>
+            <strong>Networking</strong>
+            <p>Routers, mesh systems, and home networking gear.</p>
+          </div>
+        </div>
 
-    applyTheme(stored || (prefersDark ? "dark" : "light"));
+        <div class="card">
+          <img src="assets/audio.jpg" alt="Audio">
+          <div>
+            <strong>Audio & Media</strong>
+            <p>Speakers, headphones, and entertainment tech.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    btn.addEventListener("click", () => {
-      const next = root.dataset.theme === "dark" ? "light" : "dark";
-      applyTheme(next);
-    });
-  </script>
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>
+        Email us or message on WhatsApp for availability, bulk orders, or questions.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="mailto:info@velren.eu">info@velren.eu</a>
+        <a class="btn" href="https://wa.me/353892339862" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> Velren. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
