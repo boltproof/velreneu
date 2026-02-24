@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>Velren – Buy & Sell Used Items | Ballinasloe & Surrounding Areas</title>
-<meta name="description" content="Velren is a local marketplace for buying and selling used items in Ballinasloe and surrounding areas. We list items on your behalf and take 20% commission of the final sale price when it sells." />
+<meta name="description" content="Velren is a local marketplace for buying and selling used items in Ballinasloe and surrounding areas. We can list your item for you and take 20% commission of the final sale price when it sells." />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 
 <link rel="canonical" href="https://velren.eu/" />
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Velren" />
 <meta property="og:title" content="Velren – Buy & Sell Used Items Locally" />
-<meta property="og:description" content="A simple local marketplace for Ballinasloe and surrounding areas. Buy used items or let Velren sell yours for a 20% commission." />
+<meta property="og:description" content="A simple local marketplace for Ballinasloe and nearby areas. Buy used items or let Velren sell yours for a 20% commission when it sells." />
 <meta property="og:url" content="https://velren.eu/" />
 <meta property="og:image" content="https://velren.eu/assets/logo.png" />
 
@@ -42,7 +42,8 @@
   "email": "velreneu@gmail.com",
   "sameAs": [
     "https://www.facebook.com/VelrenShop/",
-    "https://share.google/wdmHBXNprfUArM6eG"
+    "https://share.google/wdmHBXNprfUArM6eG",
+    "https://www.adverts.ie/member/3450451"
   ]
 }
 </script>
@@ -53,9 +54,12 @@
   --bg-soft:#11131a;
   --text:#f5f7fa;
   --muted:#a0a6b3;
+
+  /* Ballinasloe crest blue */
   --accent:#0B4FA2;
   --accent-dark:#083B7A;
   --accent-soft:rgba(11,79,162,0.18);
+
   --border:rgba(255,255,255,0.12);
   --radius:16px;
   --shadow:0 12px 40px rgba(0,0,0,0.35);
@@ -152,6 +156,7 @@ nav a:hover{color:var(--text)}
   display:flex;
   gap:14px;
   flex-wrap:wrap;
+  align-items:center;
 }
 
 .btn{
@@ -169,7 +174,7 @@ nav a:hover{color:var(--text)}
   color:#fff;
 }
 
-/* Icon buttons (Email / Messenger / Google Business) */
+/* Icon buttons row */
 .icon-row{
   display:flex;
   gap:12px;
@@ -177,6 +182,7 @@ nav a:hover{color:var(--text)}
   flex-wrap:wrap;
 }
 
+/* Circular icon button */
 .icon-btn{
   width:52px;
   height:52px;
@@ -204,6 +210,15 @@ nav a:hover{color:var(--text)}
   fill:currentColor;
 }
 
+/* Adverts logo inside icon button */
+.icon-btn img{
+  width:26px;
+  height:26px;
+  object-fit:contain;
+  display:block;
+  filter:none;
+}
+
 .sr-only{
   position:absolute !important;
   width:1px; height:1px;
@@ -212,10 +227,8 @@ nav a:hover{color:var(--text)}
   white-space:nowrap; border:0;
 }
 
-/* Crest (Hero + Footer) */
-.crest{
-  margin-top:18px;
-}
+/* Crest */
+.crest{margin-top:18px}
 .crest img{
   width:88px;
   max-width:100%;
@@ -345,7 +358,7 @@ footer{
 <header>
   <div class="wrap nav">
     <div class="brand">
-      <img src="assets/logo.png" alt="Velren logo" />
+      <img src="assets/logo.png" alt="Velren" />
       <strong>Velren</strong>
     </div>
     <nav>
@@ -379,7 +392,6 @@ footer{
          href="https://docs.google.com/spreadsheets/d/1TAyGZLcFNJf0NvMPk5YugeYX77IdNkGH/edit"
          target="_blank" rel="noopener">View Live Listings</a>
 
-      <!-- Icon buttons: Email + Messenger -->
       <div class="icon-row" aria-label="Contact options">
         <!-- Email -->
         <a class="icon-btn"
@@ -412,6 +424,15 @@ footer{
             <path d="M21.35 11.1H12v2.9h5.4c-.2 1.4-1.7 4.1-5.4 4.1-3.2 0-5.9-2.6-5.9-5.9S8.8 6.3 12 6.3c1.8 0 3 .8 3.7 1.4l2.5-2.4C16.6 3.9 14.5 3 12 3 7.1 3 3 7.1 3 12s4.1 9 9 9c5.2 0 8.6-3.6 8.6-8.7 0-.6-.1-1.1-.3-1.6z"/>
           </svg>
         </a>
+
+        <!-- Adverts.ie -->
+        <a class="icon-btn"
+           href="https://www.adverts.ie/member/3450451"
+           target="_blank" rel="noopener"
+           aria-label="Velren on Adverts.ie">
+          <span class="sr-only">Adverts.ie</span>
+          <img src="assets/adverts.png" alt="Adverts.ie" />
+        </a>
       </div>
     </div>
 
@@ -419,7 +440,6 @@ footer{
       Ballinasloe • Surrounding areas • Local listings • 20% commission (only when sold)
     </div>
 
-    <!-- Crest under trustline -->
     <div class="crest">
       <img src="assets/Ballinas.jpg" alt="Ballinasloe town crest" />
     </div>
@@ -446,7 +466,7 @@ footer{
 
     <div class="grid">
       <div class="card">
-        <img src="assets/smarthome.jpg" alt="Home and household items" />
+        <img src="assets/smarthome.jpg" alt="Home & household items" />
         <div class="pad">
           <strong>Home & Household</strong>
           <div class="small">Furniture, storage, kitchen bits, lamps, small appliances, and more.</div>
@@ -503,6 +523,10 @@ footer{
       <a class="btn"
          href="https://m.me/VelrenShop"
          target="_blank" rel="noopener">Message to List</a>
+
+      <a class="btn"
+         href="https://www.adverts.ie/member/3450451"
+         target="_blank" rel="noopener">Our Adverts.ie Shop</a>
     </div>
   </div>
 </section>
@@ -537,7 +561,7 @@ footer{
       <details>
         <summary>How do buyers contact you?</summary>
         <p>
-          Only via email or Facebook Messenger. No phone number and no WhatsApp.
+          Only via email or Facebook Messenger (plus Adverts.ie). No phone number and no WhatsApp.
         </p>
       </details>
     </div>
@@ -549,7 +573,6 @@ footer{
     <h2>Contact Velren</h2>
     <p><strong>Ballinasloe & surrounding areas only</strong></p>
 
-    <!-- Icon buttons row -->
     <div class="icon-row" aria-label="Contact options">
       <!-- Email -->
       <a class="icon-btn"
@@ -582,6 +605,15 @@ footer{
           <path d="M21.35 11.1H12v2.9h5.4c-.2 1.4-1.7 4.1-5.4 4.1-3.2 0-5.9-2.6-5.9-5.9S8.8 6.3 12 6.3c1.8 0 3 .8 3.7 1.4l2.5-2.4C16.6 3.9 14.5 3 12 3 7.1 3 3 7.1 3 12s4.1 9 9 9c5.2 0 8.6-3.6 8.6-8.7 0-.6-.1-1.1-.3-1.6z"/>
         </svg>
       </a>
+
+      <!-- Adverts.ie -->
+      <a class="icon-btn"
+         href="https://www.adverts.ie/member/3450451"
+         target="_blank" rel="noopener"
+         aria-label="Velren on Adverts.ie">
+        <span class="sr-only">Adverts.ie</span>
+        <img src="assets/adverts.png" alt="Adverts.ie" />
+      </a>
     </div>
   </div>
 </section>
@@ -597,37 +629,9 @@ footer{
 
         <div class="footer-links">
           <a href="https://www.facebook.com/VelrenShop/" target="_blank" rel="noopener">Facebook</a>
-
-          <!-- Footer icon buttons -->
-          <a class="icon-btn" style="width:42px;height:42px;box-shadow:none"
-             href="mailto:velreneu@gmail.com?subject=Velren%20enquiry"
-             aria-label="Email Velren">
-            <span class="sr-only">Email</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-          </a>
-
-          <a class="icon-btn" style="width:42px;height:42px;box-shadow:none"
-             href="https://m.me/VelrenShop"
-             target="_blank" rel="noopener"
-             aria-label="Message Velren on Facebook Messenger">
-            <span class="sr-only">Messenger</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.9 1.5 5.5 4 7.3V22l3.6-2c.8.2 1.6.3 2.4.3 5.5 0 10-4.1 10-9.1S17.5 2 12 2zm1 11-2.3-2.5L6 13l5-5 2.3 2.5L18 8l-5 5z"/>
-            </svg>
-          </a>
-
-          <a class="icon-btn" style="width:42px;height:42px;box-shadow:none"
-             href="https://share.google/wdmHBXNprfUArM6eG"
-             target="_blank" rel="noopener"
-             aria-label="Velren on Google Business">
-            <span class="sr-only">Google Business</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21.35 11.1H12v2.9h5.4c-.2 1.4-1.7 4.1-5.4 4.1-3.2 0-5.9-2.6-5.9-5.9S8.8 6.3 12 6.3c1.8 0 3 .8 3.7 1.4l2.5-2.4C16.6 3.9 14.5 3 12 3 7.1 3 3 7.1 3 12s4.1 9 9 9c5.2 0 8.6-3.6 8.6-8.7 0-.6-.1-1.1-.3-1.6z"/>
-            </svg>
-          </a>
-
+          <a href="https://www.adverts.ie/member/3450451" target="_blank" rel="noopener">Adverts.ie</a>
+          <a href="mailto:velreneu@gmail.com?subject=Velren%20enquiry">Email</a>
+          <a href="https://share.google/wdmHBXNprfUArM6eG" target="_blank" rel="noopener">Google</a>
           <a href="#top">Back to top</a>
         </div>
       </div>
